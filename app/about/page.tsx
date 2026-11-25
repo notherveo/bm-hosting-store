@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowRight, Server, Globe, Zap, Layers } from "lucide-react";
@@ -30,10 +32,7 @@ const features = [
   },
 ];
 
-export const metadata = {
-  title: "About Us | BlacMilk",
-  description: "Learn about our hosting philosophy and infrastructure.",
-};
+
 
 export default function AboutPage() {
   return (

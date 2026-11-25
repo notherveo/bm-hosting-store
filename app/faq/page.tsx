@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 
 import { AccordionItem } from "@/components/accordion";
@@ -45,10 +47,7 @@ const faqs = [
   },
 ];
 
-export const metadata = {
-  title: "FAQ | BlacMilk",
-  description: "Frequently asked questions about our hosting services.",
-};
+
 
 export default function FAQPage() {
   return (

@@ -1,13 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { PlanCard } from "@/components/plan-card";
 import { vpsPlans } from "@/lib/plans";
 
-export const metadata = {
-  title: "VPS Hosting | BlacMilk",
-  description: "Powerful VPS plans for developers and businesses.",
-};
+
 
 export default function VPSPage() {
   return (

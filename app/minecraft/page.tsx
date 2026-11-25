@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowRight, Cpu, Globe, Users } from "lucide-react";
@@ -6,11 +8,7 @@ import { PlanCard } from "@/components/plan-card";
 import { DISCORD_INVITE } from "@/lib/config";
 import { minecraftPlans } from "@/lib/plans";
 
-export const metadata = {
-  title: "Minecraft Hosting | BlacMilk",
-  description:
-    "Low-latency Minecraft server hosting — Vanilla, Paper, Fabric, Forge and modpacks, on NVMe.",
-};
+
 
 const SOFTWARE = [
   "Vanilla",
