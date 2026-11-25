@@ -7,14 +7,13 @@ import { motion } from "motion/react";
 import { Menu } from "lucide-react";
 import { NAV } from "@/lib/config";
 
-const navItems = NAV.map((item) => ({
-  ...item,
-  active: usePathname() === item.href,
-}));
-
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const navItems = NAV.map((item) => ({
+    ...item,
+    active: pathname === item.href,
+  }));
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#060607]/80 backdrop-blur-xl">
