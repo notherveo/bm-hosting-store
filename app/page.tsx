@@ -4,6 +4,7 @@ import { ArrowRight, Server, Zap, ShieldCheck, Layers } from "lucide-react";
 import { GlassCard } from "@/components/glass-card";
 import { InfraStats } from "@/components/infra-stats";
 import { DiscordCTA } from "@/components/discord-cta";
+import { FEATURES } from "@/lib/config";
 import { vpsPlans, minecraftPlans } from "@/lib/plans";
 
 export default function Home() {
