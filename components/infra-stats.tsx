@@ -16,13 +16,13 @@ export function InfraStats() {
     <section className="relative py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          {stats.map((stat) => (
+          {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: stat.value * 0.05 }}
+              transition={{ duration: 0.5, delay: index * 0.12 }}
               className="text-center"
             >
               <div className="text-4xl font-bold tracking-tight">
